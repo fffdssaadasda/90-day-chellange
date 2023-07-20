@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+}
+
+.main-select-box {
+    padding: 15px 10px;
+    background: #f7f7f7;
+    justify-content: center;
+    border: 1px solid #eee;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 5px 10px 0 #eee;
+    transition: 0.2s;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-select-box>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.main-select-box>div span {
+    color: white;
+    padding: 10px;
+
+    border-radius: 10px;
+}
+
+.main-select-box>div:first-child span {
+    background: red;
+}
+
+.main-select-box>div:nth-child(2) span {
+    background: #0f0;
+    font-size: 30px;
+}
+
+.main-select-box>span {
+    padding: 10px;
+    pointer-events: none;
+    font-size: 22px;
+    margin-left: 15px;
+    background-color: #ffbf69;
+    transition: 0.2s all ease-out;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.main-select-box>span:hover {
+    background: #ffb703;
+}
+
+.main-select-box select {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 18px;
+    outline: none;
+}
+
+.main-select-box select option {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 10px;
+    margin: 35px 0;
+}
+
+main section h4 {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 2;
+}
+
+main section h4 span {
+    border-radius: 50%;
+}
+
+main>div {
+    position: absolute;
+    width: 80%;
+    height: 10px;
+    background-color: #ddd;
+    top: 150px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+main>div span {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: #0f0;
+    transition: 0.2s all ease-out;
+    left: 0;
+    top: 0;
+}
+
+main span.progress {
+    position: absolute;
+    font-size: 30px;
+    top: 200px;
+}
+
+.main-select-box #reset {
+    padding: 15px;
+    font-size: 18px;
+    display: flex;
+    gap: 10px;
+    background: red;
+    color: white;
+    align-items: center;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.main-select-box #reset i {
+    font-size: 30px;
+}
+
+.main-select-box #reset:hover i {
+    animation: loading 1 0.4s ease-out;
+}
+
+@keyframes loading {
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+.main-select-box h5 {
+    border: 1px solid #eee;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+
+/* 
+     
+*/
+.main-select-box h5 span {
+    font-size: 30px;
+    padding: 5px;
+    background: #0f0;
+    color: #fff;
+    border-radius: 10px;
+}
+
+@media (max-width:576px) {
+    main section h4 {
+        text-align: center;
+    }
+
+    .main-select-box>div:nth-child(2) span {
+        font-size: 15px;
+    }
+}

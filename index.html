@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>90 Days WithOut Masturbations</title>
+</head>
+
+<body>
+    <header>
+        <div class="main-select-box">
+            <div class="start">
+                <span>start date</span>
+                <select name="Year" id="Year">
+                    <option value="">Year</option>
+                    <option value="">2023</option>
+                </select>
+                <select name="Month" id="Month">
+                    <option value="">Month</option>
+                </select>
+                <select name="Day" id="Day">
+                    <option value="">Day</option>
+                </select>
+            </div>
+            <div class="end">
+                <span>end date : </span>
+            </div>
+            <h5> Days Without Bad Things <span>0</span></h5>
+            <span id="press">calc</span>
+            <a id="reset"><i class='bx bx-reset'></i>Reset</a>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h4>congratulations! you skipped <span>0</span> days of <span>90</span> days without Masturbations </h4>
+        </section>
+        <div>
+            <span></span>
+        </div>
+        <span class="progress">0%</span>
+    </main>
+    <script src="index.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

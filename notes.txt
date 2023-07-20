@@ -1,0 +1,9 @@
+1- access to all elements 
+2- add data to select feilds 
+3- if localStorage items not includes the item name (master) =>  will be show the select bar
+4- onsubmit the calc btn will be {
+    - calclation the % of days 
+    - save the date at localStorage
+    - Subtract the select date was saved from the current day
+}
+
